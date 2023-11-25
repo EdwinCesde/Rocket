@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de colores #805ad5, #000a23*/
+
+.loggin{
+    position: relative;
+    display: flex;
+    background: linear-gradient(to right, #000a23, #02153d);
+    border-radius: 12px;
+    box-shadow: 2px 7px 14px #000;
+    height: 500px;
+    width: 1000px;
+    /*height: 43.75em;
+    width: 60em;*/
+    margin: 6em auto;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.loggin .form-login{
+    width: 40%;
+}
+
+.loggin .fondo{
+    width: 60%;
+    height: auto;
+}
+
+.frase{
+    padding-top: 5px;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.logo-form img{
+    width: 150px;
+}
+
+.google{
+    width: 5px;
+}
+
+.facebook{
+    width: 5px;
+}
+
+.usu-log {
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.pass-log{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;   
+}
+
+.Input{
+    border-radius: 2px;
+    width: 80%;
+}
+
+.Input:active{
+    border: 2px solid #c59f61;
+    background: #005c98;
+    color: #fff;
+    box-shadow: 3px 6px 15px #000;
+}
+
+#showPasswordButton{
+    margin-top: 15px;
+    background: none;
+    border-radius: 2rem;
+    width: 20%;
+}
+  
+.show-icon {
+    display: inline-block;
+}
+  
+.hide-icon {
+    display: none;
+}
+
+.boton-login{
+    background-color: #805ad5;
+    font-family: 'Archer-Book-Pro';
+    text-transform: uppercase;
+    color: white;
+    margin-top: 15px;
+    padding: 15px 25px 10px;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boton-login:hover{
+    background-color: #00eed0;
+    color: #000;
+    font-family: 'Archer-Book-Pro';
+    border: none;
+    box-shadow: 3px 6px 15px #000;
+}
+  
+.forget-pass{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #ffff;
+    margin-top: 2px;
+    text-decoration:none ;
+    border: none;
+}
+
+
+
+body{
+    font-family: 'roboto', 'sans serif';
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bg_animate{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #005c98, #505bda);
+    position: relative;
+    overflow: hidden;
+}
+
+.header_nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*.header_nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}*/
+
+.header_nav h1{
+    color: #ffff;
+    font-family: 'Gagalin';
+    font-size: 40px;
+}
+
+.header_nav nav a{
+    color: #ffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.banner_title{
+    
+    /*color: #ffff;*/
+    font-size: 40px;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.burbuja{
+    
+    border-radius: 50%;
+    background: #ffff;
+    opacity: .3;
+    position: absolute;
+    bottom: -150;
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay:3s;
+}
+
+.burbuja:nth-child(3){
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    animation-duration: 5s;
+    animation-delay:8s;
+}
+
+.burbuja:nth-child(4){
+    width: 90px;
+    height: 90px;
+    left: 65%;
+    animation-duration: 3.5s;
+    animation-delay:7s;
+}
+
+.burbuja:nth-child(5){
+    width: 20px;
+    height: 20px;
+    left: 25%;
+    animation-duration: 7s;
+    animation-delay:7s;
+}
+
+.burbuja:nth-child(6){
+    width: 110px;
+    height: 110px;
+    left: 75%;
+    animation-duration: 4s;
+    animation-delay:7s;
+}
+
+.burbuja:nth-child(7){
+    width: 30px;
+    height: 30px;
+    left: 82%;
+    animation-duration: 5s;
+    animation-delay:7s;
+}
+
+.burbuja:nth-child(8){
+    width: 60px;
+    height: 60px;
+    left: 45%;
+    animation-duration: 3s;
+    animation-delay:5s;
+}
+
+.burbuja:nth-child(10){
+    width: 25px;
+    height: 25px;
+    left: 40%;
+    animation-duration: 5s;
+    animation-delay:7s;
+}
+
+.burbuja:nth-child(11){
+    width: 90px;
+    height: 90px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay:7s;
+}
+
+.burbuja:nth-child(12){
+    width: 80px;
+    height: 80px;
+    left: 55%;
+    animation-duration: 3s;
+    animation-delay:7s;
+}
+
+.burbuja:nth-child(13){
+    width: 5px;
+    height: 5px;
+    left: 95%;
+    animation-duration: 10s;
+    animation-delay:.5s;
+}
+
+.burbuja:nth-child(14){
+    width: 25px;
+    height: 25px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay:7s;
+}
+
+.burbuja:nth-child(15){
+    width: 15px;
+    height: 15px;
+    left: 78%;
+    animation-duration: 5s;
+    animation-delay:7s;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+.cat-rocket{
+    background-image: url(./Imagen/Cat-fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+    background-attachment:fixed ;
+    background-size:cover;
+}
+
+.navBar{
+    display: flex;
+    width: 80%;
+    padding: auto;
+}
+
+.navBar a img{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(750%, 90%);
+}
+
+.navBar h1{
+    top: 50%;
+    left: 50%;
+    transform: translate(500%, 2%);
+}
+
+.navBar img{
+    padding: auto;
+    margin: auto;
+    width: 15%;
+    /*width: 150px;
+    align-items: end;
+    top: 50%;
+    left: 50%;
+    transform: translate(450%, 2%);*/
+}
+
+.navBar .titulo{
+    font-family: 'roboto', 'sans-serif';
+    margin: 21px 20px;
+}
+
+.titulo h1{
+    text-align: center;
+}
+
+.menu{
+
+    display: inline-block;
+    width: 50%;
+}
+
+.menu a{
+    width: 100%;
+    height: 30px;
+    /*padding-top: 15px;*/
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    border: 1 px solid gray;
+    display:grid;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.admon{
+    background: #0000;
+    color: #fff;
+    border: 1 px solid gray;
+    border-radius: 12px;
+}
+
+.rh{
+    background: #0000;
+    color: #fff;
+    border: 1 px solid gray;
+    border-radius: 12px;
+}
+
+.contabilidad{
+    background: #0000;
+    color: #fff;
+    
+    border-radius: 12px;
+}
+
+.sistemas{
+    background: #0000;
+    color: #fff;
+    border: 1 px solid gray;
+    border-radius: 12px;
+}
+
+.sst{
+    background: #0000;
+    color: #fff;
+    border: 1 px solid gray;
+    border-radius: 12px;
+}
+
+.admon:hover{
+ background: gray;
+ color:#000;
+    
+}
+
+.rh:hover{
+background: gray;
+color:#000;
+}
+
+.contabilidad:hover{
+background: gray;
+color:#000;
+}
+
+.sistemas:hover{
+background: gray;
+color:#000;
+}
+
+.sst:hover{
+ background: gray;
+ color:#000;   
+}
+
+.recurhum{
+    width: 100%;
+    height: auto;
+    background: #0197af;
+    /*background-image: url(./Imagen/Fondo.jpg);*/
+}
+
+.titulo-rh{
+    background: #02153d;
+    color: #ffff;
+}
+
+.banner-rh{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 10px;
+    padding: 21px;
+}
+
+.banner-rh img{
+    width: 300px;
+    height: auto;
+    border: 1px solid #00eed0;
+    border-radius: 40%;
+    margin: 30px;
+}
+
+.banner-rh img:hover{
+    transform: scale(1.2);
+}
+
+.list-empleados{
+    
+    padding: auto;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.list-empleados th, td{
+    padding: 3px;
+    border: 1px solid #00eed0;
+}
+
+.list-empleados .List-Empleados{
+    display: flexbox;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 21px;
+;
+    
+}
+.new-empleado{
+    background: #02153d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 21px;
+    align-items: center;
+}
+
+.List-Empleados:hover{
+    background: gray;
+    color:#000;
+}
+
+.new-empleado:hover{
+    background: gray;
+    color:#000;
+}
+
+table{
+    background-color: #000a23;
+    color: #ffff;
+}
